@@ -11,15 +11,12 @@ type BannedWallet {
   address: ByteArray,
 }
 
+// I had Claudious add this fake address for the IRS wallet
 const irs_wallet: ByteArray = #"1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef" // Example IRS address
 
 // Read banned wallets from external file
 validator {
-  fn check_donor_and_where(
-    donor_info: DonorInfo,
-    redeemer: Data,
-    ctx: ScriptContext,
-  ) -> Bool {
+  fn check_donor_and_where(donor_info: DonorInfo, redeemer: Data, ctx: ScriptContext) -> Bool {
     when ctx.purpose is {
       Spend(_) -> {
         let tx: Transaction = ctx.transaction
