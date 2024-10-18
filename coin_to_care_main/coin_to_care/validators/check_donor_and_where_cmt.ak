@@ -1,3 +1,53 @@
+//  Where the hell does the hash come from?
+// Import the needed hashing functionality
+use aiken/hash.{Blake2b_224, Hash, hash_key} 
+use aiken/transaction/credential.{VerificationKey, Address, Credential}
+use aiken/builtin
+
+// Function to get address hash from a transaction input
+fn get_address_hash(address: Address) -> Hash<Blake2b_224> {
+  when address.payment_credential is {
+    // For normal wallet addresses (VerificationKey credentials)
+    VerificationKey(pubkey_hash) -> pubkey_hash
+    // For script addresses
+    ScriptCredential(script_hash) -> script_hash
+  }
+}
+
+// Example usage in validator
+validator {
+  fn check_donor_and_where(donor_info: DonorInfo, redeemer: Data, ctx: ScriptContext) -> Bool {
+    when ctx.purpose is {
+      Spend(_) -> {
+        let tx: Transaction = ctx.transaction
+        // Get the first input's address
+        let sender_address = tx.inputs[0].address
+        // Get the hash of the sender's address
+        let sender_hash = get_address_hash(sender_address)
+        
+        // Now you can use the hash to compare or verify
+        // For example, to check against a known address hash:
+        let known_hash: Hash<Blake2b_224> = #"1234..."
+        
+        if sender_hash == known_hash {
+          // Do something...
+        }
+
+        // Or to convert to ByteArray for storage/comparison
+        let hash_bytes: ByteArray = hash_key(sender_hash)
+        
+        // Rest of your validation logic...
+      }
+      _ -> False
+    }
+  }
+}
+// End of Hashing Functionality lesson
+
+
+
+
+
 // Import required modules:
 // - Blake2b_224 for hashing functionality
 // - Hash type for working with hashed values
