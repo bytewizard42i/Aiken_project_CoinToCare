@@ -6,8 +6,14 @@ CareToCoin is a decentralized donation platform (DApp) that uses Cardano’s ADA
 
 
 
-Here is a link to the business plan for CoinToCare.me (Coin2Care.me) :
+***Links to Supporting Plan Documentation***
+
+CoinToCare.me Business plan, document link: 
 https://docs.google.com/document/d/1qxHz34FJJQln4uGpm3e1gvttoTH0oFGN/edit?usp=sharing&ouid=108492258928725643154&rtpof=true&sd=true
 
-Here is a link to the Miro Whiteboard for workflow for CoinToCare.me (Coin2Care.me) :
-https://miro.com/welcomeonboard/eGNDblRuckVHcUl5ZndRUW9NVnluSFhXTUxza1lRVWJ1SVJuNjFpVUJWblVDQ21PQnNhUTR3MjdLVXhLUDlSeHwzNDU4NzY0NTk3MzgxNzI0MjQ4fDI=?share_link_id=601458461514
+CoinToCare.me WhiteBoard for Smart Contract (Validator) workflow link:
+https://miro.com/app/board/uXjVLU95jwM=/?share_link_id=453967143693
+
+CoinToCare.me Venture Capital Funding Acquisition Plan, Document link:
+https://docs.google.com/document/d/1Ggd2nAfjtN0YvZp2Fnilu5GU38KUm3UJBgtubdNOP6o/edit?usp=sharing
+
