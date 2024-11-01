@@ -2,9 +2,9 @@
 
 
 import aiken/stdlib.{ByteArray}
-// Import statements for the required modules
+//                              Import statements for the required modules
 
 pub type Redeemer {
   msg: ByteArray,
-}
-// Defines Redeemer type, containing a message
+//                               Defines Redeemer type, containing a message
+
