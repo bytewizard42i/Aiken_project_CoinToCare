@@ -1,8 +1,11 @@
-//  Where the hell does the hash come from?
-// Import the needed hashing functionality
+// *** This validator checks the donor's location and wallet address to determine if funds should be sent to the IRS or returned to the sender. It uses a banned wallet list and the donor's location to make this decision. ***
+
+
 use aiken/hash.{Blake2b_224, Hash, hash_key} 
 use aiken/transaction/credential.{VerificationKey, Address, Credential}
 use aiken/builtin
+//                              Import needed import statements
+
 
 // Function to get address hash from a transaction input
 fn get_address_hash(address: Address) -> Hash<Blake2b_224> {
