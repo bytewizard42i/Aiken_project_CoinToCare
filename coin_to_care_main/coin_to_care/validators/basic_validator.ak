@@ -1,17 +1,14 @@
+// *** This file contains the validator function that checks if the redeemer message is "Hello, Aiken!" ***
+
 use aiken/crypto.{VerificationKeyHash}
 use aiken/primitive/string
-// Import necessary types from Cardano libraries
 use cardano/transaction.{Transaction}
 
-// Define Datum type, containing the owner's public key hash
-pub type Datum {
-  owner: VerificationKeyHash,
-}
+//                                  Import necessary types from Cardano libraries
 
-// Define Redeemer type, containing a message
-pub type Redeemer {
-  msg: ByteArray,
-}
+// Defined the custom Datum type, containing the owner's public key hash. Code is located in the datum_custom_types.ak file
+
+// Define the Redeemer type, containing a message. Code is located in the redeemer_custom_types.ak file
 
 // Validator function that checks if the redeemer message is "Hello, Aiken!"
 validator simple_check {
