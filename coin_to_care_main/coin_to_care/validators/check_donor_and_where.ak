@@ -1,4 +1,4 @@
-// *** This validator checks the donor's location and wallet address to determine if funds should be sent to the IRS or returned to the sender. It uses a banned wallet list and the donor's location to make this decision. ***
+// *** This validator function checks the donor's location and wallet address to determine if funds should be sent to the IRS or returned to the sender. It uses a banned wallet list and the donor's input location to make this decision. Later, a DIDz with geo-location will be used in palce of this. ***
 
 
 use aiken/hash.{Blake2b_224, Hash, hash_key} 

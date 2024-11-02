@@ -3,8 +3,10 @@
 use aiken/crypto.{VerificationKeyHash}
 use aiken/primitive/string
 use cardano/transaction.{Transaction}
-
+use datum_custom_types.my_datum
+use redeemer_custom_types.my_redeemer
 //                                  Import necessary types from Cardano libraries
+
 
 // Defined the custom Datum type, containing the owner's public key hash. Code is located in the datum_custom_types.ak file
 

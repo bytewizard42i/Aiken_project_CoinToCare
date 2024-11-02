@@ -1,6 +1,5 @@
 //     *** Datum Custom Types ***
 
-
 import aiken/stdlib/crypto.{VerificationKeyHash}
 //                              Import statements for the required modules
 
