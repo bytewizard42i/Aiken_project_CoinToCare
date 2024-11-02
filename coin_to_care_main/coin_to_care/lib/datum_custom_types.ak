@@ -1,10 +1,12 @@
 //     *** Datum Custom Types ***
 
 import aiken/stdlib/crypto.{VerificationKeyHash}
+import aiken/stdlib/primitive.{ByteArray, Int}
 //                              Import statements for the required modules
 
-pub type my_datum {
-  owner: VerificationKeyHash,
+
+pub type My_datum {
+  My_datum { owner: VerificationKeyHash, signer: ByteArray, count: Int }
 }
 //                              Defines Datum type, containing the owner's public key hash
 

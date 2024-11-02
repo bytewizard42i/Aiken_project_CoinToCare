@@ -12,7 +12,7 @@ use redeemer_custom_types.my_redeemer
 
 // Define the custom Redeemer type, containing a message. Code is located in the redeemer_custom_types.ak file
 
-validator simple_check {
+validator check_user_redeemer_input(redeemer: My_redeemer, datum: My_datum, _o: Data, ctx: ScriptContext) -> Bool {
   spend(datum: Option<Datum>, redeemer: Redeemer, _o: Data, tx: Transaction) {
     // Ensure datum is provided and matches expected structure
     expect Some(Datum { owner }) = datum

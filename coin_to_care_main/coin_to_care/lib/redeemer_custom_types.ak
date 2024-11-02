@@ -4,7 +4,9 @@ import aiken/stdlib.{ByteArray}
 //                              Import statements for the required modules
 
 
-pub type my_redeemer {
-  msg: ByteArray,
+pub type My_redeemer {
+  My_redeemer { msg: ByteArray 
+  }
+}
 //                               Defines Redeemer type, containing a message
 
