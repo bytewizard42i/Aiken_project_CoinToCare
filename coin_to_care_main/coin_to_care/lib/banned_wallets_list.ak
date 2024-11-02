@@ -1,12 +1,12 @@
+// *** This file is used to store a list of banned wallet addresses ***
+
 use aiken/transaction/credential.{Address}
 
-// neccesary improt statements
+//                neccesary import statements
 
-pub type BannedWallet {
-  address: ByteArray,
-}
+// Defined custom Datum type, containing the owner's public key hash. Thi code is located in the datum_custom_types.ak file
 
-//                Defines a list of banned wallet addresses
+// Define custom Redeemer type, containing a user input message. Code is located in the redeemer_custom_types.ak file
 
 pub fn banned_wallets() -> List<BannedWallet> {
   [
@@ -18,4 +18,5 @@ pub fn banned_wallets() -> List<BannedWallet> {
     },
   ]
 }
+//                Defines a known list of banned wallet addresses
 //                Add more banned addresses as needed
