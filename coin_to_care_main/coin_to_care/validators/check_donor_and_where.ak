@@ -1,7 +1,11 @@
 // *** This validator function checks the donor's location and wallet address to determine if funds should be sent to the IRS or returned to the sender. It uses a banned wallet list and the donor's input location to make this decision. Later, a DIDz with geo-location will be used in palce of this. ***
 
 
-use aiken/hash.{Blake2b_224, Hash, hash_key} 
+use aiken/hash.{Blake2b_224, Hash, Hash_key}	// - Blake2b_224 for hashing functionality
+use aiken/list	// List module for working with lists/arrays
+use aiken/transaction.{Transaction, ScriptContext, Spend}	
+//								Transaction related types for blockchain operations
+use aiken/transaction/credential.{VerificationKey, Address}	// Credential types for working with addresses and verification
 use aiken/transaction/credential.{VerificationKey, Address, Credential}
 use aiken/builtin
 //                              Import needed import statements
@@ -46,41 +50,27 @@ validator {
     }
   }
 }
-//								End of Hashing Functionality lesson
 
 
 
-
-
-// Import required modules:
-// - Blake2b_224 for hashing functionality
-// - Hash type for working with hashed values
-use aiken/hash.{Blake2b_224, Hash}
-// List module for working with lists/arrays
-use aiken/list
-// Transaction related types for blockchain operations
-use aiken/transaction.{Transaction, ScriptContext, Spend}
-// Credential types for working with addresses and verification
-use aiken/transaction/credential.{VerificationKey, Address}
-
-// Define a custom type for donor information
-// This structure holds a single boolean flag indicating if the donor is US-based
 type DonorInfo {
   is_us_based: Bool,
 }
+//								Define a custom type for donor information
+// 								This structure holds a single boolean flag indicating if the donor is US-based
 
-// Define a custom type for banned wallet addresses
-// This structure holds a ByteArray representing a wallet address
 type BannedWallet {
   address: ByteArray,
 }
+//								Define a custom type for banned wallet addresses
+//								This structure holds a ByteArray representing a wallet address
+// 								Define the IRS wallet address as a constant
+// 								ByteArray format: #"hex_string"
 
-// Define the IRS wallet address as a constant
-// ByteArray format: #"hex_string"
-// In production, replace this with the actual IRS wallet address
 const irs_wallet: ByteArray = #"1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+// 								In production, replace this with the actual IRS wallet address
 
-// Main validator function
+// 		*** Main validator function ***
 // This is the entry point of our smart contract
 validator {
   // check_donor_and_where takes three parameters:
