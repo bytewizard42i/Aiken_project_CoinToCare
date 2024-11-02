@@ -1,4 +1,4 @@
-// *** This file contains the validator function that checks if the redeemer message is "Hello, Aiken!" ***
+// *** This file contains the validator function that verifies if the redeemer message is "My redeemer selection" ***
 
 use aiken/crypto.{VerificationKeyHash}
 use aiken/primitive/string
