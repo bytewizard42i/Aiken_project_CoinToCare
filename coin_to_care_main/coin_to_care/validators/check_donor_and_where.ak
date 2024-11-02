@@ -46,7 +46,7 @@ validator {
     }
   }
 }
-// End of Hashing Functionality lesson
+//								End of Hashing Functionality lesson
 
 
 

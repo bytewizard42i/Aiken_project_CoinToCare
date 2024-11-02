@@ -1,4 +1,4 @@
-// *** This file contains the validator function that verifies if the redeemer message is "My redeemer selection" ***
+// *** This file contains the validator function that verifies if the user input redeemer message is "See my redeemer input selection" ***
 
 use aiken/crypto.{VerificationKeyHash}
 use aiken/primitive/string
@@ -8,9 +8,8 @@ use cardano/transaction.{Transaction}
 
 // Defined the custom Datum type, containing the owner's public key hash. Code is located in the datum_custom_types.ak file
 
-// Define the Redeemer type, containing a message. Code is located in the redeemer_custom_types.ak file
+// Define the custom Redeemer type, containing a message. Code is located in the redeemer_custom_types.ak file
 
-// Validator function that checks if the redeemer message is "Hello, Aiken!"
 validator simple_check {
   spend(datum: Option<Datum>, redeemer: Redeemer, _o: Data, tx: Transaction) {
     // Ensure datum is provided and matches expected structure
@@ -27,3 +26,4 @@ validator simple_check {
     fail
   }
 }
+//								 Validator function that checks if the redeemer message is "See my redeemer input selection" 
