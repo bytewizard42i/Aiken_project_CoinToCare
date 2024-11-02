@@ -7,7 +7,7 @@ use aiken/builtin
 //                              Import needed import statements
 
 
-// Function to get address hash from a transaction input
+
 fn get_address_hash(address: Address) -> Hash<Blake2b_224> {
   when address.payment_credential is {
     // For normal wallet addresses (VerificationKey credentials)
@@ -16,8 +16,9 @@ fn get_address_hash(address: Address) -> Hash<Blake2b_224> {
     ScriptCredential(script_hash) -> script_hash
   }
 }
+//                              Function to get address hash from a transaction input
 
-// Example usage in validator
+
 validator {
   fn check_donor_and_where(donor_info: DonorInfo, redeemer: Data, ctx: ScriptContext) -> Bool {
     when ctx.purpose is {
