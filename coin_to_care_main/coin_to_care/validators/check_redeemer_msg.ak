@@ -3,8 +3,8 @@
 use aiken/crypto.{VerificationKeyHash}
 use aiken/primitive/string
 use cardano/transaction.{Transaction}
-use datum_custom_types.my_datum
-use redeemer_custom_types.my_redeemer
+use datum_custom_types.My_datum
+use redeemer_custom_types.My_redeemer
 //                                  Import necessary types from Cardano libraries
 
 
