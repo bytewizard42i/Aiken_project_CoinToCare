@@ -1,6 +1,6 @@
 name = "js/coin_to_care"
 version = "0.0.0"
-compiler = "v1.1.4"
+compiler = "v1.1.5"
 plutus = "v3"
 license = "Apache-2.0"
 description = "Aiken contracts for project 'js/coin_to_care'"
