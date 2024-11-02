@@ -6,7 +6,9 @@ import aiken/stdlib/primitive.{ByteArray, Int}
 
 
 pub type My_datum {
-  My_datum { owner: VerificationKeyHash, signer: ByteArray, count: Int }
+  owner: VerificationKeyHash,
+  signer: ByteArray,
+  count: Int 
 }
 //                              Defines Datum type, containing the owner's public key hash
 

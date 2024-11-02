@@ -5,8 +5,7 @@ import aiken/stdlib.{ByteArray}
 
 
 pub type My_redeemer {
-  My_redeemer { msg: ByteArray 
-  }
+  msg: ByteArray 
 }
 //                               Defines Redeemer type, containing a message
 
