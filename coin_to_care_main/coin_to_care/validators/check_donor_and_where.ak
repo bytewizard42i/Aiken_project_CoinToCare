@@ -14,8 +14,8 @@ use aiken/builtin
 
 fn get_address_hash(address: Address) -> Hash<Blake2b_224> {
   when address.payment_credential is {
-    // For normal wallet addresses (VerificationKey credentials)
-    VerificationKey(pubkey_hash) -> pubkey_hash
+    
+    VerificationKey(pubkey_hash) -> pubkey_hash// For normal wallet addresses (VerificationKey credentials)
     // For script addresses
     ScriptCredential(script_hash) -> script_hash
   }
