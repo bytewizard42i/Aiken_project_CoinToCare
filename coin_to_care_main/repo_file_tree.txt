@@ -1,0 +1,65 @@
+.
+├── coin_to_care
+│   ├── aiken.lock
+│   ├── aiken.toml
+│   ├── build
+│   │   ├── aiken-compile.lock
+│   │   └── packages
+│   │       ├── aiken-lang-stdlib
+│   │       │   ├── aiken.lock
+│   │       │   ├── aiken.toml
+│   │       │   ├── CHANGELOG.md
+│   │       │   ├── .editorconfig
+│   │       │   ├── .gitattributes
+│   │       │   ├── .github
+│   │       │   │   └── workflows
+│   │       │   │       └── continuous-integration.yml
+│   │       │   ├── .gitignore
+│   │       │   ├── lib
+│   │       │   │   ├── aiken
+│   │       │   │   │   ├── cbor.ak
+│   │       │   │   │   ├── collection
+│   │       │   │   │   │   ├── dict.ak
+│   │       │   │   │   │   ├── list.ak
+│   │       │   │   │   │   └── pairs.ak
+│   │       │   │   │   ├── collection.ak
+│   │       │   │   │   ├── crypto.ak
+│   │       │   │   │   ├── interval.ak
+│   │       │   │   │   ├── math
+│   │       │   │   │   │   └── rational.ak
+│   │       │   │   │   ├── math.ak
+│   │       │   │   │   ├── option.ak
+│   │       │   │   │   └── primitive
+│   │       │   │   │       ├── bytearray.ak
+│   │       │   │   │       ├── int.ak
+│   │       │   │   │       └── string.ak
+│   │       │   │   └── cardano
+│   │       │   │       ├── address.ak
+│   │       │   │       ├── assets.ak
+│   │       │   │       ├── certificate.ak
+│   │       │   │       ├── governance
+│   │       │   │       │   └── protocol_parameters.ak
+│   │       │   │       ├── governance.ak
+│   │       │   │       ├── script_context.ak
+│   │       │   │       └── transaction.ak
+│   │       │   ├── LICENSE
+│   │       │   └── README.md
+│   │       └── packages.toml
+│   ├── env
+│   ├── .github
+│   │   └── workflows
+│   │       └── continuous-integration.yml
+│   ├── .gitignore
+│   ├── lib
+│   │   ├── banned_wallets_list.ak
+│   │   ├── datum_custom_types.ak
+│   │   └── redeemer_custom_types.ak
+│   ├── plutus.json
+│   ├── README.md
+│   └── validators
+│       ├── check_donor_and_where.ak
+│       └── check_redeemer_msg.ak
+├── commit_tree.txt
+└── repo_file_tree.txt
+
+19 directories, 44 files

@@ -1,0 +1,42 @@
+* 42d2c21 small comment shift
+* a569ad2 trying to sort this hot mess. Starting to group things and work on structure.
+* 275e70a whoops that was not wron back to -> we go
+* e9cbdf0 changed bad -> to =>
+* 496e243 aiken parser error, I think I just need curly braces
+* c0f03cb down to 2 errors and zero warnings! yeayyy!
+* 60d172e fixed the customer type names
+* baedd16 Updated Aiken compiler to v1.1.5, aiken check was complaining about it. 4 errors and 1 warning. lol not bad for my first time. haha.
+* 186089c Learned a cool shorthand from the aiken site for custom types, also one key/pair per line also helps with readability
+* 368c401 Now Im starting to code. I just figured out closer to correct aiken syntax. trying to fix supporting library with custome types and their perspective references
+* 473399e starting to be self aware. getting changes that help
+* 6041b5b clarifying and commenting for structure
+* a7c8428 file name clarification
+* d411cd2 eliminated extra files and made some file name changes as I learn my desired protocol. Trying to make clear and repeatable patterns for coding.
+* 22079c2 minor text changes
+* 99e5ce8 removed a bunch of vscode extensions and i have saving ability back. computers suck sometimes
+* d2840e7 remove clashing extensions
+* a47bb8b turned on copilot chat
+* 0bbee61 changed key bindings for save files to ctrl s ctrl s and for save all to ctrl s ctrl d Im loving the new comment protocol, looks clean and unobstrusive.
+* ab089d7 continuing to clean up comments to help me understand my structure
+* 0413390 Getting the files separated and some comments to clarify for me. Im trying a new format of 8 tabs for commetns after the code to make it more readable and unobstrusive
+* 6d24c7a added some new code, getting my files in order for the project.
+* 02ac7f1 Changed save all files keybinding as ctrl s ctrl d
+* 6a4cc2c Added redeemer and datum custom types code in remote files
+* 3fdbb2a Here I added a redeemer and datum remote definition file for lib and shortened the banned wallets file name
+* a207605 Update README.md
+* 0f0bef9 added a hshing lesson
+* 31e6fa3 added a heavily commented version of the codebase
+* 906f875 added some test code from Claudious which must be gone over thoroughly.
+* 22ee0b3 Update README.md
+* 903a1ed Update README.md
+* 85d2b60 Update README.md
+* 7098595 minor change
+* 1441e23 Update README.md
+* 305ef6c Added some Ai code to check donor file and created new file for banned wallet addresses
+* 4124832 added my first validator to my first aiken stack
+* db264a1 changed main folder name and built my first full stack for aiken
+* b921b84 I just built my first Aiken solo project skeleton!!! Yeayyy
+* b8a306d new build
+* d1f12e4 aiken new coin_to_care
+* 37c82f3 Update README.md
+* 5351638 Initial commit
