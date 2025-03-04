@@ -1,10 +1,9 @@
-//     *** Redeemer Custom Types ***
+// *** Redeemer Custom Types ***
 
-use aiken/stdlib.{ByteArray}
+use aiken/primitive.{ByteArray}
 
-//                              Import statements for the required modules
-
+// Define the My_redeemer type
 pub type My_redeemer {
   msg: ByteArray,
 }
-//                               Defines Redeemer type, containing a message
+// The message provided by the user as redeemer
